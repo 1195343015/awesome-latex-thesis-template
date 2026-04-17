@@ -8,11 +8,6 @@
     "required": [
       "school_id",
       "school_name_zh",
-      "school_name_en",
-      "city",
-      "province",
-      "status",
-      "notes",
       "templates"
     ],
     "properties": {
@@ -24,56 +19,19 @@
         "type": "string",
         "minLength": 1
       },
-      "school_name_en": {
-        "type": "string",
-        "minLength": 1
-      },
-      "city": {
-        "type": "string",
-        "minLength": 1
-      },
-      "province": {
-        "type": "string",
-        "minLength": 1
-      },
-      "status": {
-        "type": "string",
-        "enum": [
-          "covered",
-          "unverified",
-          "archived"
-        ]
-      },
-      "notes": {
-        "type": "string"
-      },
       "templates": {
         "type": "array",
         "items": {
           "type": "object",
           "required": [
-            "name",
             "repo",
-            "url",
             "degree_types",
-            "official_status",
-            "maintenance_status",
-            "last_verified",
-            "evidence",
             "github_metrics"
           ],
           "properties": {
-            "name": {
-              "type": "string",
-              "minLength": 1
-            },
             "repo": {
               "type": "string",
               "pattern": "^[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+$"
-            },
-            "url": {
-              "type": "string",
-              "format": "uri"
             },
             "degree_types": {
               "type": "array",
@@ -89,31 +47,6 @@
                   "unknown"
                 ]
               }
-            },
-            "official_status": {
-              "type": "string",
-              "enum": [
-                "official",
-                "community",
-                "unknown"
-              ]
-            },
-            "maintenance_status": {
-              "type": "string",
-              "enum": [
-                "active",
-                "inactive",
-                "archived",
-                "unknown"
-              ]
-            },
-            "last_verified": {
-              "type": "string",
-              "format": "date"
-            },
-            "evidence": {
-              "type": "string",
-              "minLength": 1
             },
             "github_metrics": {
               "type": "object",

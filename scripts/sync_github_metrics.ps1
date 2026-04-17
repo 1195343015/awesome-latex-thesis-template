@@ -24,6 +24,8 @@ function Get-GitHubJson {
 $syncedAt = [DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")
 $data = Get-Content $dataPath -Raw | ConvertFrom-Json -Depth 100
 
+$retainedSchools = @()
+
 foreach ($school in $data) {
     $retainedTemplates = @()
     foreach ($template in $school.templates) {
@@ -40,29 +42,35 @@ foreach ($school in $data) {
         }) -Force
 
         if ($stars -ge $minStars -and $lastCommitAtUtc -ge $minLastCommitAt) {
-            $retainedTemplates += $template
+            $retainedTemplates += [pscustomobject]@{
+                repo = $template.repo
+                degree_types = @($template.degree_types)
+                github_metrics = [pscustomobject]@{
+                    stars = $stars
+                    last_commit_at = $lastCommitAt
+                    last_synced_at = $syncedAt
+                }
+            }
         }
     }
 
-    $school.templates = @($retainedTemplates)
-    if ($school.templates.Count -gt 0) {
-        $school.status = "covered"
-        $school.notes = "自动同步后仍满足收录门槛：stars >= $minStars，且最近一次提交时间在 2024-01-01 及之后。"
-    }
-    else {
-        $school.status = "unverified"
-        $school.notes = "当前没有 GitHub 仓库满足收录门槛：stars >= $minStars，且最近一次提交时间在 2024-01-01 及之后。"
+    if ($retainedTemplates.Count -gt 0) {
+        $retainedSchools += [pscustomobject]@{
+            school_id = $school.school_id
+            school_name_zh = $school.school_name_zh
+            templates = @($retainedTemplates)
+        }
     }
 }
 
-$data | ConvertTo-Json -Depth 100 | Set-Content $dataPath -Encoding utf8NoBOM
+$retainedSchools | ConvertTo-Json -Depth 100 | Set-Content $dataPath -Encoding utf8NoBOM
 
-$rows = foreach ($school in $data) {
+$rows = foreach ($school in $retainedSchools) {
     foreach ($template in $school.templates) {
         [pscustomobject]@{
             school_name_zh = $school.school_name_zh
             repo = $template.repo
-            url = $template.url
+            url = "https://github.com/$($template.repo)"
             stars = [int]$template.github_metrics.stars
             last_commit_date = ([string]$template.github_metrics.last_commit_at).Substring(0, 10)
         }
@@ -70,9 +78,6 @@ $rows = foreach ($school in $data) {
 }
 
 $sortedRows = $rows | Sort-Object @{ Expression = "stars"; Descending = $true }, school_name_zh, repo
-$coveredCount = ($data | Where-Object { $_.status -eq "covered" }).Count
-$unverifiedCount = ($data | Where-Object { $_.status -eq "unverified" }).Count
-$unverifiedSchools = $data | Where-Object { $_.status -eq "unverified" } | ForEach-Object { "- $($_.school_name_zh)" }
 
 $tableLines = @(
     "| 学校 | 仓库 | Stars | 最近提交 |",
@@ -88,16 +93,5 @@ $tableMarkdown = ($tableLines -join "`n")
 $readme = Get-Content $readmePath -Raw
 $pattern = "(?s)$([regex]::Escape($beginMarker)).*?$([regex]::Escape($endMarker))"
 $replacement = "$beginMarker`n$tableMarkdown`n$endMarker"
-$coveredLine = "- 已收录至少一个仓库的学校数：``{0}``" -f $coveredCount
-$unverifiedLine = "- 首轮检索后仍未确认的学校数：``{0}``" -f $unverifiedCount
-$unverifiedBlock = "## 当前未确认学校`n`n{0}`n`n## 已确认仓库" -f ($unverifiedSchools -join "`n")
 $updatedReadme = [regex]::Replace($readme, $pattern, $replacement)
-$updatedReadme = [regex]::Replace($updatedReadme, '- 已收录至少一个仓库的学校数：`[0-9]+`', $coveredLine)
-$updatedReadme = [regex]::Replace($updatedReadme, '- 首轮检索后仍未确认的学校数：`[0-9]+`', $unverifiedLine)
-$updatedReadme = [regex]::Replace($updatedReadme, '- 跟踪学校数：`[0-9]+`', "- 跟踪学校数：``$($data.Count)``")
-$updatedReadme = [regex]::Replace(
-    $updatedReadme,
-    "(?s)## 当前未确认学校\s+.*?\s+## 已确认仓库",
-    $unverifiedBlock
-)
 $updatedReadme | Set-Content $readmePath -Encoding utf8NoBOM

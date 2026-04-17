@@ -10,11 +10,11 @@
 - 仅收录 GitHub 仓库
 - 仅收录 `Stars >= 10` 的仓库
 - 仅收录最近一次提交时间在 `2024-01-01` 及之后的仓库
-- 以学校为单位建立索引，并保留仓库级证据说明
+- 以学校为单位建立索引
 
 ## 已确认仓库
 
-下表中的 `Stars` 和 `最近提交` 由脚本自动同步，默认通过 GitHub Actions 定时刷新，也可以手动触发。由于本仓库只保留满足当前活跃门槛的模板，README 不再单独展示状态列。
+下表中的 `Stars` 和 `最近提交` 由脚本自动同步，默认通过 GitHub Actions 定时刷新，也可以手动触发。当前仓库收录并不保证全面，未出现在列表中的学校或模板不代表不存在，只表示尚未纳入当前数据集。
 
 <!-- BEGIN:repo-table -->
 | 学校 | 仓库 | Stars | 最近提交 |
@@ -25,7 +25,7 @@
 | 哈尔滨工业大学 | [hithesis/hithesis](https://github.com/hithesis/hithesis) | 2195 | 2026-04-14 |
 | 中国科学技术大学 | [ustctug/ustcthesis](https://github.com/ustctug/ustcthesis) | 2070 | 2026-04-16 |
 | 电子科技大学 | [bdebye/thesisuestc](https://github.com/bdebye/thesisuestc) | 1619 | 2026-03-17 |
-| 武汉大学 | [whutug/whu-thesis](https://github.com/whutug/whu-thesis) | 1303 | 2025-05-27 |
+| 武汉大学 | [whutug/whu-thesis](https://github.com/whutug/whu-thesis) | 1302 | 2025-05-27 |
 | 北京理工大学 | [BITNP/BIThesis](https://github.com/BITNP/BIThesis) | 1085 | 2026-04-04 |
 | 西安电子科技大学 | [note286/xduts](https://github.com/note286/xduts) | 1085 | 2025-05-04 |
 | 复旦大学 | [stone-zeng/fduthesis](https://github.com/stone-zeng/fduthesis) | 1020 | 2024-05-06 |
@@ -41,6 +41,7 @@
 | 西北工业大学 | [1195343015/nwputhesis](https://github.com/1195343015/nwputhesis) | 120 | 2026-04-17 |
 | 东南大学 | [Teddy-van-Jerry/seuthesis2024b](https://github.com/Teddy-van-Jerry/seuthesis2024b) | 61 | 2024-08-28 |
 <!-- END:repo-table -->
+
 
 
 
