@@ -27,25 +27,46 @@
 - 中国海洋大学
 - 西北农林科技大学
 
-## 首批已确认仓库
+## 已确认仓库
 
-| 学校 | 仓库 | 状态 |
-| --- | --- | --- |
-| 清华大学 | [`tuna/thuthesis`](https://github.com/tuna/thuthesis) | active |
-| 北京理工大学 | [`BITNP/BIThesis`](https://github.com/BITNP/BIThesis) | active |
-| 北京航空航天大学 | [`CheckBoxStudio/BUAAThesis`](https://github.com/CheckBoxStudio/BUAAThesis) | unknown |
-| 哈尔滨工业大学 | [`hithesis/hithesis`](https://github.com/hithesis/hithesis) | active |
-| 复旦大学 | [`stone-zeng/fduthesis`](https://github.com/stone-zeng/fduthesis) | active |
-| 上海交通大学 | [`sjtug/SJTUThesis`](https://github.com/sjtug/SJTUThesis) | active |
-| 南京大学 | [`nju-lug/NJUThesis`](https://github.com/nju-lug/NJUThesis) | active |
-| 浙江大学 | [`TheNetAdmin/zjuthesis`](https://github.com/TheNetAdmin/zjuthesis) | active |
-| 中国科学技术大学 | [`ustctug/ustcthesis`](https://github.com/ustctug/ustcthesis) | active |
-| 武汉大学 | [`whutug/whu-thesis`](https://github.com/whutug/whu-thesis) | active |
-| 中南大学 | [`CSUcse/CSUthesis`](https://github.com/CSUcse/CSUthesis) | unknown |
-| 华南理工大学 | [`mengchaoheng/SCUT_thesis`](https://github.com/mengchaoheng/SCUT_thesis) | active |
-| 电子科技大学 | [`bdebye/thesisuestc`](https://github.com/bdebye/thesisuestc) | active |
-| 西安交通大学 | [`obster-y/XJTU-thesis`](https://github.com/obster-y/XJTU-thesis) | unknown |
-| 西北工业大学 | [`1195343015/nwputhesis`](https://github.com/1195343015/nwputhesis) | unknown |
+下表中的 `Stars` 和 `最近提交` 由脚本自动同步，默认通过 GitHub Actions 定时刷新，也可以手动触发。
+
+<!-- BEGIN:repo-table -->
+| 学校 | 仓库 | Stars | 最近提交 | 状态 |
+| --- | --- | ---: | --- | --- |
+| 清华大学 | [tuna/thuthesis](https://github.com/tuna/thuthesis) | 5257 | 2026-04-04 | active |
+| 上海交通大学 | [sjtug/SJTUThesis](https://github.com/sjtug/SJTUThesis) | 3742 | 2026-03-12 | active |
+| 浙江大学 | [TheNetAdmin/zjuthesis](https://github.com/TheNetAdmin/zjuthesis) | 3605 | 2025-12-08 | active |
+| 哈尔滨工业大学 | [hithesis/hithesis](https://github.com/hithesis/hithesis) | 2195 | 2026-04-14 | active |
+| 中国科学技术大学 | [ustctug/ustcthesis](https://github.com/ustctug/ustcthesis) | 2070 | 2026-04-16 | active |
+| 电子科技大学 | [bdebye/thesisuestc](https://github.com/bdebye/thesisuestc) | 1619 | 2026-03-17 | active |
+| 武汉大学 | [whutug/whu-thesis](https://github.com/whutug/whu-thesis) | 1303 | 2025-05-27 | active |
+| 北京理工大学 | [BITNP/BIThesis](https://github.com/BITNP/BIThesis) | 1085 | 2026-04-04 | active |
+| 复旦大学 | [stone-zeng/fduthesis](https://github.com/stone-zeng/fduthesis) | 1020 | 2024-05-06 | active |
+| 南京大学 | [nju-lug/NJUThesis](https://github.com/nju-lug/NJUThesis) | 629 | 2026-04-13 | active |
+| 北京航空航天大学 | [CheckBoxStudio/BUAAThesis](https://github.com/CheckBoxStudio/BUAAThesis) | 603 | 2024-02-01 | unknown |
+| 华南理工大学 | [mengchaoheng/SCUT_thesis](https://github.com/mengchaoheng/SCUT_thesis) | 534 | 2026-01-27 | active |
+| 西安交通大学 | [obster-y/XJTU-thesis](https://github.com/obster-y/XJTU-thesis) | 399 | 2026-02-03 | unknown |
+| 同济大学 | [TJ-CSCCG/tongji-undergrad-thesis](https://github.com/TJ-CSCCG/tongji-undergrad-thesis) | 337 | 2026-04-16 | active |
+| 华中科技大学 | [skinaze/HUSTPaperTemp](https://github.com/skinaze/HUSTPaperTemp) | 326 | 2022-04-12 | inactive |
+| 重庆大学 | [nanmu42/CQUThesis](https://github.com/nanmu42/CQUThesis) | 324 | 2022-05-12 | inactive |
+| 中南大学 | [CSUcse/CSUthesis](https://github.com/CSUcse/CSUthesis) | 287 | 2025-04-02 | unknown |
+| 天津大学 | [xnth97/TJUThesisLatexTemplate](https://github.com/xnth97/TJUThesisLatexTemplate) | 153 | 2024-05-28 | inactive |
+| 中国人民大学 | [ZebinWang/ructhesis](https://github.com/ZebinWang/ructhesis) | 128 | 2016-12-21 | inactive |
+| 东北大学 | [sci-m-wang/NEU-Thesis](https://github.com/sci-m-wang/NEU-Thesis) | 122 | 2025-02-09 | unknown |
+| 西北工业大学 | [1195343015/nwputhesis](https://github.com/1195343015/nwputhesis) | 120 | 2026-04-17 | unknown |
+| 华东师范大学 | [YijunYuan/ECNU-Undergraduate-LaTeX](https://github.com/YijunYuan/ECNU-Undergraduate-LaTeX) | 105 | 2020-04-09 | inactive |
+| 四川大学 | [cuiao/SCU_ThesisDissertation_LaTeXTemplate](https://github.com/cuiao/SCU_ThesisDissertation_LaTeXTemplate) | 105 | 2018-03-29 | inactive |
+| 山东大学 | [Liam0205/sduthesis](https://github.com/Liam0205/sduthesis) | 86 | 2017-03-23 | inactive |
+| 东南大学 | [Teddy-van-Jerry/seuthesis2024b](https://github.com/Teddy-van-Jerry/seuthesis2024b) | 61 | 2024-08-28 | active |
+| 湖南大学 | [leaf-hsiao/HNUThesisTemplate](https://github.com/leaf-hsiao/HNUThesisTemplate) | 56 | 2019-12-11 | inactive |
+| 中山大学 | [zhibo/sysuthesis](https://github.com/zhibo/sysuthesis) | 25 | 2013-04-15 | inactive |
+| 大连理工大学 | [stevewongv/DLUT_XeLaTeX_Template_For_Bachelor](https://github.com/stevewongv/DLUT_XeLaTeX_Template_For_Bachelor) | 16 | 2018-05-31 | unknown |
+| 厦门大学 | [xiamenwcy/LaTeXFileforXMUThesis](https://github.com/xiamenwcy/LaTeXFileforXMUThesis) | 14 | 2018-11-22 | inactive |
+| 兰州大学 | [szsdk/LZUthesis](https://github.com/szsdk/LZUthesis) | 11 | 2022-07-09 | inactive |
+| 云南大学 | [cherrot/ynuthesislyx](https://github.com/cherrot/ynuthesislyx) | 10 | 2013-05-19 | inactive |
+| 吉林大学 | [dartall/jluthesis](https://github.com/dartall/jluthesis) | 5 | 2009-03-07 | inactive |
+<!-- END:repo-table -->
 
 ## 状态定义
 
@@ -91,6 +112,9 @@ data/
 - `maintenance_status`：`active`、`inactive`、`archived` 或 `unknown`
 - `last_verified`：人工核验日期，格式为 `YYYY-MM-DD`
 - `evidence`：用于说明收录依据的简短证据文本
+- `github_metrics.stars`：当前 GitHub star 数
+- `github_metrics.last_commit_at`：最近一次提交时间
+- `github_metrics.last_synced_at`：上次同步 GitHub 指标的时间
 
 ## 当前进度
 
@@ -102,3 +126,6 @@ data/
 - 增加自动化 schema 校验
 - 自动生成已收录 / 未收录学校表格
 - 增加贡献说明，方便提交新学校或新仓库
+
+
+

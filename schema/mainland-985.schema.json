@@ -63,7 +63,8 @@
             "official_status",
             "maintenance_status",
             "last_verified",
-            "evidence"
+            "evidence",
+            "github_metrics"
           ],
           "properties": {
             "name": {
@@ -117,6 +118,29 @@
             "evidence": {
               "type": "string",
               "minLength": 1
+            },
+            "github_metrics": {
+              "type": "object",
+              "required": [
+                "stars",
+                "last_commit_at",
+                "last_synced_at"
+              ],
+              "properties": {
+                "stars": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "last_commit_at": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "last_synced_at": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              },
+              "additionalProperties": false
             }
           },
           "additionalProperties": false
