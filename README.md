@@ -31,21 +31,21 @@
 
 | 学校 | 仓库 | 状态 |
 | --- | --- | --- |
-| 清华大学 | `tuna/thuthesis` | active |
-| 北京理工大学 | `BITNP/BIThesis` | active |
-| 北京航空航天大学 | `CheckBoxStudio/BUAAThesis` | unknown |
-| 哈尔滨工业大学 | `hithesis/hithesis` | active |
-| 复旦大学 | `stone-zeng/fduthesis` | active |
-| 上海交通大学 | `sjtug/SJTUThesis` | active |
-| 南京大学 | `nju-lug/NJUThesis` | active |
-| 浙江大学 | `TheNetAdmin/zjuthesis` | active |
-| 中国科学技术大学 | `ustctug/ustcthesis` | active |
-| 武汉大学 | `whutug/whu-thesis` | active |
-| 中南大学 | `CSUcse/CSUthesis` | unknown |
-| 华南理工大学 | `mengchaoheng/SCUT_thesis` | active |
-| 电子科技大学 | `bdebye/thesisuestc` | active |
-| 西安交通大学 | `obster-y/XJTU-thesis` | unknown |
-| 西北工业大学 | `1195343015/nwputhesis` | unknown |
+| 清华大学 | [`tuna/thuthesis`](https://github.com/tuna/thuthesis) | active |
+| 北京理工大学 | [`BITNP/BIThesis`](https://github.com/BITNP/BIThesis) | active |
+| 北京航空航天大学 | [`CheckBoxStudio/BUAAThesis`](https://github.com/CheckBoxStudio/BUAAThesis) | unknown |
+| 哈尔滨工业大学 | [`hithesis/hithesis`](https://github.com/hithesis/hithesis) | active |
+| 复旦大学 | [`stone-zeng/fduthesis`](https://github.com/stone-zeng/fduthesis) | active |
+| 上海交通大学 | [`sjtug/SJTUThesis`](https://github.com/sjtug/SJTUThesis) | active |
+| 南京大学 | [`nju-lug/NJUThesis`](https://github.com/nju-lug/NJUThesis) | active |
+| 浙江大学 | [`TheNetAdmin/zjuthesis`](https://github.com/TheNetAdmin/zjuthesis) | active |
+| 中国科学技术大学 | [`ustctug/ustcthesis`](https://github.com/ustctug/ustcthesis) | active |
+| 武汉大学 | [`whutug/whu-thesis`](https://github.com/whutug/whu-thesis) | active |
+| 中南大学 | [`CSUcse/CSUthesis`](https://github.com/CSUcse/CSUthesis) | unknown |
+| 华南理工大学 | [`mengchaoheng/SCUT_thesis`](https://github.com/mengchaoheng/SCUT_thesis) | active |
+| 电子科技大学 | [`bdebye/thesisuestc`](https://github.com/bdebye/thesisuestc) | active |
+| 西安交通大学 | [`obster-y/XJTU-thesis`](https://github.com/obster-y/XJTU-thesis) | unknown |
+| 西北工业大学 | [`1195343015/nwputhesis`](https://github.com/1195343015/nwputhesis) | unknown |
 
 ## 状态定义
 
