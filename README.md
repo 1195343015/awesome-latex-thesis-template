@@ -1,23 +1,23 @@
-# China Mainland 985 Thesis LaTeX Templates
+# 中国内地 985 高校学位论文 LaTeX 模板收录
 
-An indexed collection of GitHub-hosted LaTeX thesis templates for mainland China 985 universities.
+这是一个面向中国内地 `985` 高校的 GitHub 托管 LaTeX 学位论文模板索引项目。
 
-Current scope:
+当前收录范围：
 
-- Mainland China 985 universities only
-- Thesis / dissertation / graduation project templates only
-- GitHub repositories only
-- School-level records plus repository-level evidence
+- 仅收录中国内地 `985` 高校
+- 仅收录学位论文 / 毕业设计 / 毕业论文模板
+- 仅收录 GitHub 仓库
+- 以学校为单位建立索引，并保留仓库级证据说明
 
-This project is intentionally conservative. A school is only marked as covered when at least one GitHub repository has been identified and manually recorded.
+本项目采取保守收录策略。只有在人工确认至少一个符合条件的 GitHub 仓库后，学校状态才会标记为 `covered`。
 
-## Snapshot
+## 当前概览
 
-- Schools tracked: `39`
-- Schools with at least one recorded repository: `32`
-- Schools still unverified after the first search pass: `7`
+- 跟踪学校数：`39`
+- 已收录至少一个仓库的学校数：`32`
+- 首轮检索后仍未确认的学校数：`7`
 
-## Current Unverified Schools
+## 当前未确认学校
 
 - 北京大学
 - 北京师范大学
@@ -27,9 +27,9 @@ This project is intentionally conservative. A school is only marked as covered w
 - 中国海洋大学
 - 西北农林科技大学
 
-## Seed Repositories
+## 首批已确认仓库
 
-| University | Repository | Status |
+| 学校 | 仓库 | 状态 |
 | --- | --- | --- |
 | 清华大学 | `tuna/thuthesis` | active |
 | 北京理工大学 | `BITNP/BIThesis` | active |
@@ -47,20 +47,20 @@ This project is intentionally conservative. A school is only marked as covered w
 | 西安交通大学 | `obster-y/XJTU-thesis` | unknown |
 | 西北工业大学 | `NWPUMetaphysicsOffice/Yet-Another-LaTeX-Template-for-NPU-Thesis` | unknown |
 
-## Status Definitions
+## 状态定义
 
-- `covered`: at least one matching GitHub repository has been recorded
-- `unverified`: no matching repository has been manually recorded yet
-- `archived`: matching repositories exist but appear archived or no longer maintained
+- `covered`：已人工确认至少一个符合条件的 GitHub 仓库
+- `unverified`：尚未人工确认到符合条件的 GitHub 仓库
+- `archived`：存在相关仓库，但看起来已归档或长期不再维护
 
-## Repository Inclusion Rules
+## 仓库收录规则
 
-- Must be hosted on GitHub
-- Must primarily target thesis, dissertation, or graduation project writing
-- Must be clearly associated with a mainland China 985 university
-- Course reports, resumes, slides, and generic article templates are excluded
+- 必须托管在 GitHub
+- 必须主要面向学位论文、毕业论文或毕业设计写作
+- 必须能明确关联到某一所中国内地 985 高校
+- 课程报告、简历、幻灯片、通用文章模板不收录
 
-## Directory Layout
+## 目录结构
 
 ```text
 schema/
@@ -69,36 +69,36 @@ data/
   mainland-985.json
 ```
 
-## Data Fields
+## 数据字段
 
-- `school_id`: stable ASCII identifier
-- `school_name_zh`: Chinese school name
-- `school_name_en`: English school name
-- `city`: primary city
-- `province`: province-level region
-- `project_985`: whether the university belongs to Project 985
-- `status`: collection status for this school
-- `notes`: short manual note
-- `templates`: recorded GitHub repositories for this school
+- `school_id`：稳定的 ASCII 学校标识
+- `school_name_zh`：学校中文名
+- `school_name_en`：学校英文名
+- `city`：学校主校区所在城市
+- `province`：省级行政区
+- `project_985`：是否属于 985 工程高校
+- `status`：当前收录状态
+- `notes`：人工备注
+- `templates`：该校已记录的 GitHub 模板仓库列表
 
-Template fields:
+模板字段：
 
-- `name`: template or repository short name
-- `repo`: `owner/name`
-- `url`: GitHub repository URL
-- `degree_types`: supported document types
-- `official_status`: `official`, `community`, or `unknown`
-- `maintenance_status`: `active`, `inactive`, `archived`, or `unknown`
-- `last_verified`: manual verification date in `YYYY-MM-DD`
-- `evidence`: short evidence statement used during manual curation
+- `name`：模板或仓库简称
+- `repo`：`owner/name`
+- `url`：GitHub 仓库地址
+- `degree_types`：支持的学位类型
+- `official_status`：`official`、`community` 或 `unknown`
+- `maintenance_status`：`active`、`inactive`、`archived` 或 `unknown`
+- `last_verified`：人工核验日期，格式为 `YYYY-MM-DD`
+- `evidence`：用于说明收录依据的简短证据文本
 
-## Initial Coverage
+## 当前进度
 
-The first version contains all mainland China 985 universities as school records and a seed set of confirmed GitHub repositories for a subset of schools.
+第一版已经补齐全部中国内地 `39` 所 `985` 高校的学校级记录，并为其中一部分学校补充了人工核验过的 GitHub 仓库。
 
-## Next Steps
+## 后续计划
 
-- Expand coverage to all 39 mainland 985 universities
-- Add automated schema validation
-- Add generated tables for active templates and missing schools
-- Add contribution guidelines for submitting new repositories
+- 补齐全部 `39` 所高校的仓库确认
+- 增加自动化 schema 校验
+- 自动生成已收录 / 未收录学校表格
+- 增加贡献说明，方便提交新学校或新仓库
