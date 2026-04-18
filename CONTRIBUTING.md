@@ -40,9 +40,6 @@
   - `undergraduate`
   - `master`
   - `doctoral`
-  - `postdoc`
-  - `proposal`
-  - `unknown`
 
 如果学校已存在，请直接在原条目中追加模板，不要重复建学校。
 

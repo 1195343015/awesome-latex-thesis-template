@@ -41,10 +41,7 @@
                 "enum": [
                   "undergraduate",
                   "master",
-                  "doctoral",
-                  "postdoc",
-                  "proposal",
-                  "unknown"
+                  "doctoral"
                 ]
               }
             },

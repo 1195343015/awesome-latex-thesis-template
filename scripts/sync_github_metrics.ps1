@@ -19,9 +19,6 @@ function Format-DegreeTypes {
             "undergraduate" { "本科" }
             "master" { "硕士" }
             "doctoral" { "博士" }
-            "postdoc" { "博士后" }
-            "proposal" { "开题" }
-            "unknown" { "未知" }
             default { $degreeType }
         }
     }

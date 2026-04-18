@@ -8,8 +8,7 @@
         "degree_types": [
           "undergraduate",
           "master",
-          "doctoral",
-          "postdoc"
+          "doctoral"
         ],
         "github_metrics": {
           "stars": 5257,
@@ -81,7 +80,9 @@
       {
         "repo": "sci-m-wang/NEU-Thesis",
         "degree_types": [
-          "unknown"
+          "undergraduate",
+          "master",
+          "doctoral"
         ],
         "github_metrics": {
           "stars": 122,
@@ -100,9 +101,7 @@
         "degree_types": [
           "undergraduate",
           "master",
-          "doctoral",
-          "postdoc",
-          "proposal"
+          "doctoral"
         ],
         "github_metrics": {
           "stars": 2195,
@@ -286,7 +285,8 @@
       {
         "repo": "bdebye/thesisuestc",
         "degree_types": [
-          "unknown"
+          "master",
+          "doctoral"
         ],
         "github_metrics": {
           "stars": 1619,
