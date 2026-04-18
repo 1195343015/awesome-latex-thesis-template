@@ -8,6 +8,27 @@ $endMarker = "<!-- END:repo-table -->"
 $minStars = 100
 $minLastCommitAt = [DateTime]"2024-01-01T00:00:00Z"
 
+function Format-DegreeTypes {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string[]]$DegreeTypes
+    )
+
+    $labels = foreach ($degreeType in $DegreeTypes) {
+        switch ($degreeType) {
+            "undergraduate" { "本科" }
+            "master" { "硕士" }
+            "doctoral" { "博士" }
+            "postdoc" { "博士后" }
+            "proposal" { "开题" }
+            "unknown" { "未知" }
+            default { $degreeType }
+        }
+    }
+
+    ($labels | Select-Object -Unique) -join " / "
+}
+
 function Get-GitHubJson {
     param(
         [Parameter(Mandatory = $true)]
@@ -71,6 +92,7 @@ $rows = foreach ($school in $retainedSchools) {
             school_name_zh = $school.school_name_zh
             repo = $template.repo
             url = "https://github.com/$($template.repo)"
+            degree_types = Format-DegreeTypes -DegreeTypes @($template.degree_types)
             stars = [int]$template.github_metrics.stars
             last_commit_date = ([string]$template.github_metrics.last_commit_at).Substring(0, 10)
         }
@@ -80,13 +102,13 @@ $rows = foreach ($school in $retainedSchools) {
 $sortedRows = $rows | Sort-Object @{ Expression = "stars"; Descending = $true }, school_name_zh, repo
 
 $tableLines = @(
-    "| 学校 | 仓库 | Stars | 最近提交 |",
-    "| --- | --- | ---: | --- |"
+    "| 学校 | 仓库 | 学位类型 | Stars | 最近提交 |",
+    "| --- | --- | --- | ---: | --- |"
 )
 
 foreach ($row in $sortedRows) {
     $repoLabel = $row.repo
-    $tableLines += "| {0} | [`{1}`]({2}) | {3} | {4} |" -f $row.school_name_zh, $repoLabel, $row.url, $row.stars, $row.last_commit_date
+    $tableLines += "| {0} | [`{1}`]({2}) | {3} | {4} | {5} |" -f $row.school_name_zh, $repoLabel, $row.url, $row.degree_types, $row.stars, $row.last_commit_date
 }
 
 $tableMarkdown = ($tableLines -join "`n")
