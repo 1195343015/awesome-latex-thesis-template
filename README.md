@@ -22,28 +22,29 @@
 <!-- BEGIN:repo-table -->
 | 学校 | 仓库 | 学位类型 | Stars | 最近提交 |
 | --- | --- | --- | ---: | --- |
-| 清华大学 | [tuna/thuthesis](https://github.com/tuna/thuthesis) | 本科 / 硕士 / 博士 | 5285 | 2026-04-04 |
+| 清华大学 | [tuna/thuthesis](https://github.com/tuna/thuthesis) | 本科 / 硕士 / 博士 | 5287 | 2026-04-04 |
 | 上海交通大学 | [sjtug/SJTUThesis](https://github.com/sjtug/SJTUThesis) | 本科 / 硕士 / 博士 | 3762 | 2026-03-12 |
 | 浙江大学 | [TheNetAdmin/zjuthesis](https://github.com/TheNetAdmin/zjuthesis) | 本科 / 硕士 / 博士 | 3621 | 2025-12-08 |
-| 哈尔滨工业大学 | [hithesis/hithesis](https://github.com/hithesis/hithesis) | 本科 / 硕士 / 博士 | 2221 | 2026-04-14 |
+| 哈尔滨工业大学 | [hithesis/hithesis](https://github.com/hithesis/hithesis) | 本科 / 硕士 / 博士 | 2222 | 2026-04-14 |
 | 中国科学技术大学 | [ustctug/ustcthesis](https://github.com/ustctug/ustcthesis) | 本科 / 硕士 / 博士 | 2089 | 2026-04-16 |
-| 电子科技大学 | [bdebye/thesisuestc](https://github.com/bdebye/thesisuestc) | 硕士 / 博士 | 1635 | 2026-04-23 |
+| 电子科技大学 | [bdebye/thesisuestc](https://github.com/bdebye/thesisuestc) | 硕士 / 博士 | 1639 | 2026-04-23 |
 | 武汉大学 | [whutug/whu-thesis](https://github.com/whutug/whu-thesis) | 本科 / 硕士 / 博士 | 1313 | 2025-05-27 |
 | 西安电子科技大学 | [note286/xduts](https://github.com/note286/xduts) | 本科 / 硕士 / 博士 | 1110 | 2025-05-04 |
-| 北京理工大学 | [BITNP/BIThesis](https://github.com/BITNP/BIThesis) | 本科 / 硕士 / 博士 | 1107 | 2026-04-28 |
+| 北京理工大学 | [BITNP/BIThesis](https://github.com/BITNP/BIThesis) | 本科 / 硕士 / 博士 | 1108 | 2026-04-30 |
 | 复旦大学 | [stone-zeng/fduthesis](https://github.com/stone-zeng/fduthesis) | 本科 / 硕士 / 博士 | 1028 | 2024-05-06 |
-| 中山大学 | [SYSU-SCC/sysu-thesis](https://github.com/SYSU-SCC/sysu-thesis) | 本科 | 921 | 2026-04-23 |
-| 南京大学 | [nju-lug/NJUThesis](https://github.com/nju-lug/NJUThesis) | 本科 / 硕士 / 博士 | 643 | 2026-04-24 |
+| 中山大学 | [SYSU-SCC/sysu-thesis](https://github.com/SYSU-SCC/sysu-thesis) | 本科 | 922 | 2026-04-23 |
+| 南京大学 | [nju-lug/NJUThesis](https://github.com/nju-lug/NJUThesis) | 本科 / 硕士 / 博士 | 645 | 2026-04-24 |
 | 北京航空航天大学 | [CheckBoxStudio/BUAAThesis](https://github.com/CheckBoxStudio/BUAAThesis) | 硕士 / 博士 | 608 | 2024-02-01 |
 | 华南理工大学 | [mengchaoheng/SCUT_thesis](https://github.com/mengchaoheng/SCUT_thesis) | 硕士 / 博士 | 539 | 2026-01-27 |
 | 西安交通大学 | [obster-y/XJTU-thesis](https://github.com/obster-y/XJTU-thesis) | 硕士 / 博士 | 402 | 2026-02-03 |
-| 同济大学 | [TJ-CSCCG/tongji-undergrad-thesis](https://github.com/TJ-CSCCG/tongji-undergrad-thesis) | 本科 | 363 | 2026-04-23 |
+| 同济大学 | [TJ-CSCCG/tongji-undergrad-thesis](https://github.com/TJ-CSCCG/tongji-undergrad-thesis) | 本科 | 364 | 2026-04-23 |
 | 中南大学 | [CSUcse/CSUthesis](https://github.com/CSUcse/CSUthesis) | 硕士 / 博士 | 288 | 2025-04-02 |
 | 北京邮电大学 | [jjfu99/BUPTGraduateThesisLatexTemplate](https://github.com/jjfu99/BUPTGraduateThesisLatexTemplate) | 硕士 / 博士 | 211 | 2026-03-16 |
 | 天津大学 | [xnth97/TJUThesisLatexTemplate](https://github.com/xnth97/TJUThesisLatexTemplate) | 硕士 / 博士 | 154 | 2024-05-28 |
-| 西北工业大学 | [1195343015/nwputhesis](https://github.com/1195343015/nwputhesis) | 本科 / 硕士 / 博士 | 148 | 2026-04-25 |
+| 西北工业大学 | [1195343015/nwputhesis](https://github.com/1195343015/nwputhesis) | 本科 / 硕士 / 博士 | 152 | 2026-04-25 |
 | 东北大学 | [sci-m-wang/NEU-Thesis](https://github.com/sci-m-wang/NEU-Thesis) | 本科 / 硕士 / 博士 | 122 | 2025-02-09 |
 <!-- END:repo-table -->
+
 
 
 
