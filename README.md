@@ -22,9 +22,9 @@
 <!-- BEGIN:repo-table -->
 | 学校 | 仓库 | 学位类型 | Stars | 最近提交 |
 | --- | --- | --- | ---: | --- |
-| 清华大学 | [tuna/thuthesis](https://github.com/tuna/thuthesis) | 本科 / 硕士 / 博士 | 5414 | 2026-06-17 |
+| 清华大学 | [tuna/thuthesis](https://github.com/tuna/thuthesis) | 本科 / 硕士 / 博士 | 5415 | 2026-06-17 |
 | 上海交通大学 | [sjtug/SJTUThesis](https://github.com/sjtug/SJTUThesis) | 本科 / 硕士 / 博士 | 3827 | 2026-03-12 |
-| 浙江大学 | [TheNetAdmin/zjuthesis](https://github.com/TheNetAdmin/zjuthesis) | 本科 / 硕士 / 博士 | 3723 | 2025-12-08 |
+| 浙江大学 | [TheNetAdmin/zjuthesis](https://github.com/TheNetAdmin/zjuthesis) | 本科 / 硕士 / 博士 | 3724 | 2025-12-08 |
 | 哈尔滨工业大学 | [hithesis/hithesis](https://github.com/hithesis/hithesis) | 本科 / 硕士 / 博士 | 2353 | 2026-04-14 |
 | 中国科学技术大学 | [ustctug/ustcthesis](https://github.com/ustctug/ustcthesis) | 本科 / 硕士 / 博士 | 2121 | 2026-07-25 |
 | 电子科技大学 | [bdebye/thesisuestc](https://github.com/bdebye/thesisuestc) | 硕士 / 博士 | 1669 | 2026-06-17 |
@@ -44,6 +44,7 @@
 | 天津大学 | [xnth97/TJUThesisLatexTemplate](https://github.com/xnth97/TJUThesisLatexTemplate) | 硕士 / 博士 | 157 | 2024-05-28 |
 | 东北大学 | [sci-m-wang/NEU-Thesis](https://github.com/sci-m-wang/NEU-Thesis) | 本科 / 硕士 / 博士 | 127 | 2026-07-29 |
 <!-- END:repo-table -->
+
 
 
 
